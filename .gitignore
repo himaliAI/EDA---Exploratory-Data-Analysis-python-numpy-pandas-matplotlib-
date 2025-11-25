@@ -14,7 +14,12 @@ __pycache__/
 .Python
 env/
 venv/
+
+# Folders
 datasets/
+
+# Files
+rough.py
 
 # Jupyter
 .ipynb_checkpoints

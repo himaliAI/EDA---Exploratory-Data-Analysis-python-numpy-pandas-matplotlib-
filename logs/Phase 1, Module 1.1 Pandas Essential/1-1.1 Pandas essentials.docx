@@ -1,0 +1,47 @@
+Pandas Essentials:
+
+1. Series:
+    one-dimensional labeled array (labeled with index; numeriacal automatically, labelled to be done manually)
+    ages = pd.Series([25, 30, 35, 40]) # index 0 to 3
+    ages_labelled = pd.Series([25, 30, 35, 40], index=['Alice', 'Bob', 'Charlie', 'David'])
+
+2. DadaFrame
+    two-dimensional labeled data structure (rows x columns)
+    Eg: a table of people with age and city
+
+3. Indexing with .loc (df['Name'] indicates column selection, df.loc and df.iloc indicates rows selection)
+    end index is inclusive
+    uses row/column label 
+    useful when you have named indices or column names
+    df.loc[[0, 2]] # gives first and third rows 
+
+4. Indexing with .iloc
+    end index is exclusive
+    
+5. Boolean indexing:
+    Filters rows based on condition
+    Eg print age > 27
+    print(df[df['Age'] > 27])
+
+    eg City is 'Butwal'
+    print(df[df['City'] == 'Butwal'])
+
+6. Chained Assignments and SettingWithCopyWarning
+    Instead of writing df[df['City'] == 'Butwal']['Age'] = 99 
+        # Pandas confused whether you are slicing or writing
+    Write df.loc[df['City'] == 'Butwal', 'Age'] = 99
+        # Select rows where City = "Butwal" and set age = 99 in those rows
+
+7. MultiIndex objects:
+    Instead of just one index (like row number), you can have multiple levels
+    eg City -> Name -> Age 
+    Makes grouped data analysis easier
+
+    # Set multiIndex: City + Name
+    df_multi = df.set_index(["City", "Name"])
+
+    # Access data with multiIndex 
+    # Select all rows where City = "Palpa"
+    print(df_multi.loc["Palpa"])
+    # Select a specific person (city + Name)
+    print(df_multi.loc[("Palpa", "Hari")])
