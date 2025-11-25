@@ -1,0 +1,52 @@
+NumPy for EDA Acceleration
+
+1. vectorized operations:
+    Instead of looping through elements (as in pure Python),
+        NumPy applies operations to entire arrays at once
+    So, codes are shorter, faster, and more readable
+    You can quickly transform entire columns of a DataFrame
+        Pandas columns are built on NumPy arrays
+    
+2. Broadcasting:
+    NumPy automatically stretches arrays of different shapes to make opertions possible
+    eg:
+    arr = np.array([1, 2, 3]) # shape (3,)
+    matrix = np.array([
+        [10],
+        [20],
+        [30]
+    ])  # shape(3, 1)
+    print(arr + matrix) # shape (3, 3)
+
+    Broadcasting Rules:
+        1. Compare shapes element-wise from right to left
+        2. If dimensions differ:
+            a. If one is 1, it can be stretched
+            b. If they don't match and neither is 1, error
+
+3. Random Numbers in NumPy
+    Why random numbers matters?
+        a. Simulations
+        b. Sampling
+        c. Synthetic datasets
+        d. Noise injection
+
+    NumPy's random module
+        a. Uniform distribution
+            Every number in range has equal probability
+        b. Normal (Gaussian) distribution
+            Bell-shaped curve defined by mean and SD 
+        c. Integers
+            Random integers within a range
+        d. Choice/Permutation
+            Randomly select elements from an array
+            Shuffle arrays or sample without replacement
+
+        Seed:
+            Random numbers are generated using a pseudo-random algorithm
+            Setting a seed ensures reproducibility
+                i.e same random numbers every time you run the code 
+        
+        Shape:
+            You can generate arrays of random numbers directly by specifying shape of array 
+        
