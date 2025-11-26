@@ -1,0 +1,51 @@
+### Data visualization with Matplotlib
+
+1. Figure and Axes
+    Figure is the overall canvas
+    Axes are plotting areas inside the Figure
+
+2. Basic plot types
+    Line plot - line diagram over time or sequence
+    Scatter plot - a dot for each data pair (two variables)
+        Best for relationship between two continuous variables
+    Histogram - distribution of a single variable
+        Best for continuous variables 
+    Bar plot - Categorical comparisions
+        Best for categorical summaries eg Status counts
+
+3. Customization
+    Titles, axis labels, legends
+    Colors, markers, line styles
+    Gridlines, annotations
+
+4. Workflow
+    Import Matplotlib (import matplotlib.pyplot as plt)
+    Create figure and axes (plt.figure(), plt.subplots())
+    Plot data (plt.plot(), plt.hist(), etc)
+    Customize (plt.title(), plt.xlabel(), etc)
+    Show or save (plt.show(). plt.savefig())
+
+We will practice with Breast Cancer Wisconsin Dataset
+    source: UCI ML Repo. also available directly in sklearn.datasets
+    rows: 569
+    column: 30 features + 1 target
+    Target: benign/malignant
+    Features: mean radius, texture, perimeter, area, smoothness, compactness, concaavity, symmetry, fractal dimension etc 
+
+Seaborn Pairplot:
+    It creates a grid of scatter plots for every pair of selected features
+    Adds Histogram or (KDEs) on the diagonal to show distributions
+    Colors points by categorical variable (here benign vs malignant)
+    Helps spot correlation, separations, and clusters across many features simultaneously
+
+correlation matrix + heatmap
+    Pairplot are great visually but can get overwhelming with too many features 
+    Option is: correlation matrix + heatmap
+
+Boxplot:
+    Shows median, IQR, and outliers
+    Great for quick comparisons 
+
+Violin plot:
+    Adds a kernel density estimate (like a smoothed histogram) around the boxplot.
+    Great for visualizing distribution shape
