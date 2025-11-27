@@ -1,0 +1,13 @@
+Why skewness matters:
+    Skewness measures how asymmetric a distribution is compared to a normal (bell-shaped) curve.
+    Positive skew → long tail on the right (common in medical size-related features).
+    Negative skew → long tail on the left.
+    Highly skewed features can distort models like Logistic Regression or SVM, so we often apply log-transform or other normalization later.
+
+Kurtosis
+    It measures the 'tailedness' and 'peakedness' of a distribution
+    It tells us about the presence of extreme values (outliers)
+    In pandas:
+        > +3 very peaked, heavy tails # more data in extreme than in normal range
+        0 normal distribution
+        < -3 Very flat, light tails 
