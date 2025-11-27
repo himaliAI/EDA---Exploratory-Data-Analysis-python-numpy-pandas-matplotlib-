@@ -1,0 +1,14 @@
+Outliers detection methods:
+    1. Boxplot/IQR Method 
+        Outliers are values outside the range:
+            [Q1 - 1.5 * IQR, Q3 + 1.5 * IQR]
+            IQR = Q3 - Q1
+    
+    2. Z-score method 
+        z = (x - mean)/SD
+        Outliers are defined as |z|>3
+
+    3. Visualization
+        Boxplots and Violinplots are great for spotting outliers visually
+        Scatter plots can also reveal extreme points
+
