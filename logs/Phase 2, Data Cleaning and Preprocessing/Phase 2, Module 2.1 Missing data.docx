@@ -1,0 +1,40 @@
+Missing Data:
+    1. MCAR (Missing Completely at Random)
+        - no relationship to any variable
+        - eg a lab machine randomly fails to record a result
+        - safe to drop rows/column
+
+    2. MAR (Missing at Random)
+        - Missingness depends on observed variables but not the missing value itself
+        - eg Older patients are less likely to have certain test results recorded
+        - Can impute using group-based strategies
+
+    3. MNAR (Missing not at Random)
+        - Missingness depends on the missing value itself
+        - eg Patients with very high cholestorol avoid reporting it 
+        - Hardest to handle - requires domain knowledge
+
+Detect missing data:
+    isnull().sum()
+
+Missing values management strategies:
+    drop 
+    impute(mean/median/mode)
+    flag
+    group-based imputation
+
+Data Type Fixes:
+    1. Numeric-looking strings
+        convert using pd.to_numeric() or .astype(float/int)
+        Issue: Mixed values like '45kg' or "N/A" need cleaning before conversion
+
+    2. Date parsing
+        Problem: Dates stored as strings eg "2025-11-28", "28/11/2025"
+        Fix: Convert using pd.to_datetime()
+        Issue: Inconsistent formats -> must specify 'format' or 'dayfirst=True'
+
+    3. Categorical encoding
+        eg: Male, Female, Others - stored as strings 
+        Fix: Convert to 'category' dtype
+        for ML: Encode with One-Hot Encoding or Label Encoding
+        Issue: Wrong encoding can mislead models (ordinal vs nominal)
