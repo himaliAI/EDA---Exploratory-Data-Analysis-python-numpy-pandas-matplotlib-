@@ -1,0 +1,18 @@
+Text Variables - Introduction
+1. Word Counts:
+    Count total words in a text column
+    Use: detect verbosity, short vs long entries, missing text
+
+2. Token Frequency
+    Break text into tokens (words) and count frequency across the dataset
+    Helps identify common terms, medical jargon, or repeated notes
+
+3. Basic Pattern Recognition
+    Detect specific keywords, phrases, or patterns (eg "urgent", "biopsy")
+    Useful for flagging important cases
+
+Why this Matters?
+    Even simple text analysis can reveal hidden signals in medical datasets (e.g., doctors’ notes, patient reports).
+    Word counts → measure verbosity.
+    Token frequency → highlight common terms.
+    Pattern recognition → flag critical cases.

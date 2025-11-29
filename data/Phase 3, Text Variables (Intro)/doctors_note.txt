@@ -1,0 +1,81 @@
+Patient Name: Jane Doe
+Age: 52 years
+Sex: Female
+Date of Visit: November 28, 2025
+Hospital ID: 20251128-001
+
+Chief Complaint:
+Patient presents with a history of breast pain and a palpable lump in the upper outer quadrant of the left breast, noticed approximately six weeks ago. Reports gradual increase in size, occasional tenderness, and associated anxiety regarding possible malignancy.
+
+History of Present Illness:
+The patient describes the lump as firm and irregular. She first noticed it while showering. Initially thought it might be benign but sought medical attention after persistence. Denies nipple discharge, but reports mild weight loss over the past two months. Fatigue and occasional night sweats noted. No history of trauma to the breast. No recent infections. Patient expresses significant concern about prognosis and treatment options.
+
+Past Medical History:
+- Hypertension, controlled with medication.
+- Type 2 diabetes mellitus, diagnosed 5 years ago.
+- No prior surgeries.
+- No known drug allergies.
+
+Family History:
+- Maternal aunt diagnosed with breast carcinoma at age 60.
+- Father with history of ischemic heart disease.
+- No known genetic testing performed.
+
+Social History:
+- Non-smoker, occasional alcohol use.
+- Works as a school teacher.
+- Married, lives with spouse and two adult children.
+- Reports moderate stress related to work and health concerns.
+
+Review of Systems:
+- General: Fatigue, mild weight loss.
+- Cardiovascular: No chest pain, palpitations, or syncope.
+- Respiratory: No cough, hemoptysis, or dyspnea.
+- Gastrointestinal: Normal appetite, no nausea or vomiting.
+- Genitourinary: No urinary complaints.
+- Musculoskeletal: No joint pain.
+- Neurological: No headaches, seizures, or focal deficits.
+- Psychiatric: Anxiety regarding health.
+
+Physical Examination:
+- General: Alert, oriented, anxious appearance.
+- Vitals: BP 130/80 mmHg, HR 82 bpm, Temp 98.6°F, RR 16/min.
+- Breast: Palpable lump in left upper outer quadrant, firm, irregular, non-mobile, approximately 2.5 cm in diameter. No skin dimpling. No nipple retraction. No discharge.
+- Axilla: No palpable lymphadenopathy.
+- Cardiovascular: Normal heart sounds.
+- Respiratory: Clear breath sounds.
+- Abdomen: Soft, non-tender.
+- Neurological: Grossly intact.
+
+Investigations:
+- Mammogram: Suspicious lesion, BI-RADS category 4.
+- Ultrasound: Irregular hypoechoic mass, 2.6 cm, poorly defined margins.
+- Core biopsy: Pathology pending.
+- Blood tests: CBC normal, fasting glucose elevated, HbA1c 7.2%.
+- Chest X-ray: Normal.
+- ECG: Normal sinus rhythm.
+
+Impression:
+Suspicious breast lesion, likely malignant. Awaiting biopsy results for confirmation. Patient has risk factors including family history and age.
+
+Treatment Plan:
+1. Await biopsy pathology report.
+2. Multidisciplinary tumor board discussion.
+3. Counsel patient regarding possible surgical options:
+   - Lumpectomy with sentinel lymph node biopsy.
+   - Mastectomy if indicated.
+4. Discuss adjuvant therapies:
+   - Chemotherapy depending on staging.
+   - Radiation therapy post-surgery.
+   - Hormonal therapy if receptor-positive.
+5. Provide psychological support and counseling.
+6. Optimize diabetes control prior to surgery.
+7. Schedule follow-up in two weeks.
+
+Counseling Notes:
+Patient expresses anxiety about diagnosis and prognosis. Counseling provided regarding treatment options, survival rates, and importance of early intervention. Patient reassured that treatment is available and outcomes are favorable with timely management. Family involved in discussion. Written educational material provided.
+
+Follow-Up Instructions:
+- Monitor for changes in lump size, pain, or new symptoms.
+- Urgent review if fever, rapid swelling, or bleeding occurs.
+- Return in two weeks for biopsy results and treatment planning.
