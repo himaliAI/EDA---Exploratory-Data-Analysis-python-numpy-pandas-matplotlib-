@@ -33,7 +33,7 @@ with open("D:\EDA\data\Phase 3, Text Variables (Intro)\doctors_note.txt", mode="
     doctors_note = f.read() 
         # .readlines() makes list of lines
         # .read() makes a single string of all contents of the .txt file
-tokens = doctors_note.lower().split()
+tokens = doctors_note.lower().split() # text.split() for general python, text.str.split() for pandas column
 print(f"Word count: {len(tokens)}")
 
 critical_words = ['urgent', 'biopsy', 'counseling']
