@@ -1,0 +1,31 @@
+Choosing the right chart:
+    1. Scatterplot:
+        Shows relationships between two variables
+    2. Boxplot:
+        Compare distribution across categories
+        eg: mean radius across malignant vs benign groups
+    3. Heatmap:
+        Summarize many relationships at once
+        eg: correlation matrix of all tumor features
+
+Avoid misleading visuals:
+    1. Proper scaling:
+        Don't truncate axes unless you explicitly want to highligh small differences
+    2. Honest color maps
+        Avoid rainbow colormaps
+        Prefer viridis, coolwarm
+    3. Clear labelling
+        Label units, categories, and axes
+
+Building Narrative Dashboards
+    1. Combine multiple plots
+        use subplots or matplotlib.gridspec to arrange scatterplots, boxplots, and heatmaps together
+    2. Guide the user's eye
+        Place the most important plot in the top-left or center
+        Use consistent color scheme (malignant -> red, Benign -> blue)
+    3. Tell a story
+        Heatmap shows collinearity among tumor features 
+        Scatterplot highlights separation between malignant and benign
+        Boxplot compares distribution of a key feature 
+
+        
