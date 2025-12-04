@@ -68,13 +68,3 @@
         a. Use statsmodels.tsa.seasonal_decompose() to split series into trend, seasonality, and residuals
         b. Helps identify cyclical patterns (eg hospital admissions, sales)
 
-4. Time-Series EDA 
-    1. Rolling Statistics 
-        Smooth out short-term fluctuations and highlight longer-term trends
-        a. Rolling Mean / Moving Average 
-        
-            df['rolling_mean_7'] = df['value'].rolling(window=7).mean()
-
-        b. Rolling Variance / Std Dev (to detect volatility)
-
-            df['rolling_std_7'] = df['value'].rolling(window=7).std()

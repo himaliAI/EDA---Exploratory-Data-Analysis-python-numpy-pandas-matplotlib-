@@ -1,0 +1,24 @@
+1. Time-Series EDA 
+    1. Rolling Statistics 
+        Smooth out short-term fluctuations and highlight longer-term trends
+        a. Rolling Mean / Moving Average 
+        
+            df['rolling_mean_7'] = df['value'].rolling(window=7).mean()
+
+        b. Rolling Variance / Std Dev (to detect volatility)
+
+            df['rolling_std_7'] = df['value'].rolling(window=7).std()
+
+    2. Seasonal Decomposition 
+        Break down time series into trend, seasonality, and residuals 
+            Trend -> long-term direction (eg increasing patient visits)
+            seasonality -> repeating cycles (eg monthly billiing cycles, yearly flu season)
+            Residuals -> irregular noise
+
+    3. Helper Functions for seasonal EDA 
+        see .py file
+
+    4. Visualization
+        Line plots for raw + rolling mean 
+        Decomposition plots for trend/seasonality
+        Heatmaps for seasonal patterns (eg month vs year)
