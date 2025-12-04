@@ -1,0 +1,80 @@
+1. Workflow Standardization: (to create a repetable checklist so every dataset gets the same structured treatment)
+    i. Step-by-step EDA checklist 
+        a. Dataset overview:
+            Load dataset (pd.read_csv, pd.read_excel, etc)
+            Inspect shape (df.shape) -> rows x columns
+            Preview df.head(), df.describe()
+
+        b. Missing values
+            Count missing: df.isnull().sum()
+            Percentage missing per column 
+            Decide strategy: drop, impute, or flag
+
+        c. Data types and Structure 
+            Identify numeric, categorical, text, datetime columns 
+            Convert types if needed (pd.to_datetime, astype)
+            Check unique values for categorical features
+
+        d. Univariate Analysis
+            Numeric: histograms, boxplots, summary stats 
+            Categorical: value counts, bar plots 
+            Text: word counts, token frequency 
+
+        e. Bivariate Analysis
+            Numeric vs Numeric: scatterplots, correlation 
+            Numeric vs Categorical: boxplots, group means 
+            Categorical vs Categorical: cross-tabulations, stacked bar plots 
+
+        f. Multivariate Analysis 
+            Correlation matrix and heatmaps
+            PCA for dimensionality reduction
+            Clustering (optional)
+
+        g. Outlier detection
+            Boxplots, z-scores, IQR method
+            Decide whether to cap, transform, or drop 
+
+        h. feature engineering (if needed)
+            Create interactive terms
+            Encode categorical variables
+            Scale/normalize numeric features 
+
+        i. Documentation
+            Record key findings
+            Save plots and summaries 
+            Build reproducible notebook/scripts
+
+    ii. Handling large datasets
+        a. Use df.sample(1000) for quick previews
+        b. Profile subsets before scaling up
+        c. Consider efficient libraries like Dask, Vaex, or Polars for distributed EDA 
+        d. Use effienent plotting (eg hexbin plots, KDE instead of scatter for millions of points)
+
+2. Automation Tools (to build helper functions that automate repetitive tasks)
+    i. Helper fuctions:
+        a. missing_summary(df) -> % missing per column
+        b. outlier_summary(df) -> outlier counts per numeric column 
+        c. category_report(df) -> frequency tables for categorical variables
+    ii. Mini EDA report builders
+        a. Combine summaries + plots into a single function 
+            eg: eda_report(df) -> prints dataset info, missing summary, top correlatioins, and key plots.
+            can be extended to jupyter notebooks or dashboards
+
+3. Time-Series EDA (Extend EDA skills to temporal datasets)
+    i. Rolling statistics
+        a. Moving averages, rolling mean/variance for trend detection
+            eg: df['value'].rolling(window=7).mean() for weekly smoothing
+    ii. Seasonal decomposition
+        a. Use statsmodels.tsa.seasonal_decompose() to split series into trend, seasonality, and residuals
+        b. Helps identify cyclical patterns (eg hospital admissions, sales)
+
+4. Time-Series EDA 
+    1. Rolling Statistics 
+        Smooth out short-term fluctuations and highlight longer-term trends
+        a. Rolling Mean / Moving Average 
+        
+            df['rolling_mean_7'] = df['value'].rolling(window=7).mean()
+
+        b. Rolling Variance / Std Dev (to detect volatility)
+
+            df['rolling_std_7'] = df['value'].rolling(window=7).std()
